@@ -1,0 +1,4 @@
+<div [ngClass]="alertClass">
+  <a *ngIf="alert.allowClose" href="#" class="close" data-dismiss="alert" aria-label="close" (click)="closeAlert()">&times;</a>
+  <span>{{alert.message}}</span>
+</div>
