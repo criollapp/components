@@ -2,7 +2,7 @@
   "name": "@criollapp/components",
   "main": "./bundles/ca-components.umd.js",
   "typings": "./typings/public_api.d.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "This is an angular module that provides a set of components that can be used with different functionalities and with little code.",
   "scripts": {
@@ -27,7 +27,7 @@
     "example"
   ],
   "author": "Miguel Rivera",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@angular/cli": "^1.6.6",
     "@angular/common": "^5.2.2",
@@ -54,6 +54,10 @@
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.10.0",
     "shelljs": "^0.8.1"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/criollapp/components.git"
   },
   "dependencies": {
     "zone.js": "^0.8.20"
