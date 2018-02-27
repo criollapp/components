@@ -23,8 +23,10 @@
   },
   "keywords": [
     "angular2",
-    "library",
-    "example"
+    "angular",
+    "components",
+    "module",
+    "library"
   ],
   "author": "Miguel Rivera",
   "private": false,
