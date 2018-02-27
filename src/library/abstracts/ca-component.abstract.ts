@@ -1,8 +1,8 @@
-import {XClassAbstract} from '@x/common';
+import {CAClassAbstract} from '@criollapp/common';
 import { IXCssFramework, XCssFrameworkGeneric, XCssFrameworkAbstract, XCssFrameworkBootstrap, XCssFrameworkMaterial } from "@x/theme";
 import { Input } from "@angular/core";
 
-export abstract class CAComponentAbstract extends XClassAbstract {
+export abstract class CAComponentAbstract extends CAClassAbstract {
   public cssFramework:IXCssFramework;
 
   constructor()

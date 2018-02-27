@@ -1,9 +1,9 @@
-import { XGeneratorUtil } from "@x/common";
+import { CAGeneratorUtil } from "@criollapp/common";
 
 export class TestXComponentsUtil
 {
   public static resetStaticValues():void
   {
-    XGeneratorUtil.maxIdNumber = XGeneratorUtil.initialMaxIsNumber;
+      CAGeneratorUtil.maxIdNumber = CAGeneratorUtil.initialMaxIsNumber;
   }
 }

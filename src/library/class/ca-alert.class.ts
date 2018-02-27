@@ -1,6 +1,6 @@
-import {XClassAbstract} from '@x/common';
+import {CAClassAbstract} from '@criollapp/common';
 
-export class CAlertClass extends XClassAbstract {
+export class CAlertClass extends CAClassAbstract {
 
   static readonly TYPE_WARNING = 'warning';
   static readonly TYPE_INFO = 'info';

@@ -24,9 +24,8 @@ import sass from 'node-sass';
  *      e.g. import { map } from 'rxjs/operators'; => 'rxjs/operators': 'Rx.Observable.prototype'
  */
 const globals = {
-  '@x/common': 'ng.xCommon',
+  '@criollapp/common': 'ng.caCommon',
   '@x/theme': 'ng.xTheme',
-  '@x/tests': 'ng.xTests',
   '@angular/core': 'ng.core',
   '@angular/common': 'ng.common',
 
