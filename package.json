@@ -2,7 +2,7 @@
   "name": "@criollapp/components",
   "main": "./bundles/ca-components.umd.js",
   "typings": "./typings/public_api.d.ts",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "This is an angular module that provides a set of components that can be used with different functionalities and with little code.",
   "scripts": {
