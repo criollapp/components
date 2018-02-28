@@ -1,6 +1,6 @@
 import { CAGeneratorUtil } from "@criollapp/common";
 
-export class TestXComponentsUtil
+export class TestCAComponentsUtil
 {
   public static resetStaticValues():void
   {

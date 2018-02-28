@@ -3,7 +3,7 @@ import {
     CAStepByStepAbstract
 } from '../ca-components';
 
-describe('XComponents', () => {
+describe('CAComponents', () => {
 
   it('files were exported', () => {
     expect(true).toBeTruthy();

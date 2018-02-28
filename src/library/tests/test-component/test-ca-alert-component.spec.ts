@@ -3,7 +3,7 @@ import { DebugElement } from "@angular/core";
 import { CAlertComponent } from "../../components/alert/ca-alert.component";
 import { CAlertClass } from "../../class/ca-alert.class";
 import { By } from "@angular/platform-browser";
-import { TestXAlertContainerComponent } from "../utils/test-ca-alert-component-container.util";
+import { TestCAlertContainerComponent } from "../utils/test-ca-alert-component-container.util";
 
 describe('CAlertComponent', () => {
   let de: DebugElement;
@@ -11,19 +11,19 @@ describe('CAlertComponent', () => {
   let component: CAlertComponent;
   let fixture: ComponentFixture<CAlertComponent>;
 
-  let componentContainer: TestXAlertContainerComponent;
-  let fixtureContainer: ComponentFixture<TestXAlertContainerComponent>;
+  let componentContainer: TestCAlertContainerComponent;
+  let fixtureContainer: ComponentFixture<TestCAlertContainerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [],
-      declarations: [CAlertComponent, TestXAlertContainerComponent]
+      declarations: [CAlertComponent, TestCAlertContainerComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CAlertComponent);
-    fixtureContainer = TestBed.createComponent(TestXAlertContainerComponent);
+    fixtureContainer = TestBed.createComponent(TestCAlertContainerComponent);
     component = fixture.componentInstance;
     componentContainer = fixtureContainer.componentInstance;
     de = fixture.debugElement.query(By.css('div'));

@@ -1,11 +1,11 @@
 import { TestStep } from "../utils/test-ca-step.util";
-import { TestXComponentsUtil } from "../utils/test-ca-components.util";
+import { TestCAComponentsUtil } from "../utils/test-ca-components.util";
 
 describe('CAStepAbstract', () => {
   let step:TestStep;
 
   beforeEach(() => {
-    TestXComponentsUtil.resetStaticValues();
+    TestCAComponentsUtil.resetStaticValues();
     step = new TestStep('generic');
   });
 

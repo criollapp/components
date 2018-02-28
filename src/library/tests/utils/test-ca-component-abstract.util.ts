@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
   selector: 'test-component-abstract',
   template: ''
 })
-export class TestXComponentAbstract extends CAComponentAbstract
+export class TestCAComponentAbstract extends CAComponentAbstract
 {
 
 }

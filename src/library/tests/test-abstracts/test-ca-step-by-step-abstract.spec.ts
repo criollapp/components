@@ -1,24 +1,24 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
-import { XTestStepByStepComponent } from "../utils/test-ca-step-by-step-component.util";
-import { TestXComponentsUtil } from "../utils/test-ca-components.util";
+import { CATestStepByStepComponent } from "../utils/test-ca-step-by-step-component.util";
+import { TestCAComponentsUtil } from "../utils/test-ca-components.util";
 import { CAStepByStepAbstract } from "../../abstracts/ca-step-by-step.abstract";
 import { TestStep } from "../utils/test-ca-step.util";
 import { CAComponentsModule } from "../../modules/ca-components.module";
 
 describe('CAStepByStepAbstract', () => {
-  let component: XTestStepByStepComponent;
-  let fixture: ComponentFixture<XTestStepByStepComponent>;
+  let component: CATestStepByStepComponent;
+  let fixture: ComponentFixture<CATestStepByStepComponent>;
 
   beforeEach(async(() => {
-    TestXComponentsUtil.resetStaticValues();
+    TestCAComponentsUtil.resetStaticValues();
     TestBed.configureTestingModule({
       imports: [CAComponentsModule],
-      declarations: [XTestStepByStepComponent]
+      declarations: [CATestStepByStepComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(XTestStepByStepComponent);
+    fixture = TestBed.createComponent(CATestStepByStepComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

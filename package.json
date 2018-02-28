@@ -2,7 +2,7 @@
   "name": "@criollapp/components",
   "main": "./bundles/ca-components.umd.js",
   "typings": "./typings/public_api.d.ts",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "license": "MIT",
   "description": "This is an angular module that provides a set of components that can be used with different functionalities and with little code.",
   "scripts": {
@@ -18,8 +18,7 @@
     "publish-lib": "npm publish ./dist",
     "publish-lib:next": "npm publish --tag next ./dist",
     "compodoc": "compodoc -p tsconfig.json",
-    "compodoc-serve": "compodoc -s",
-    "link": "npm link @x/theme"
+    "compodoc-serve": "compodoc -s"
   },
   "keywords": [
     "angular2",
@@ -31,8 +30,6 @@
   "author": "Miguel Rivera",
   "private": false,
   "dependencies": {
-    "@criollapp/common": "^1.0.11",
-    "zone.js": "^0.8.20",
     "@angular/cli": "^1.6.6",
     "@angular/common": "^5.2.2",
     "@angular/compiler": "^5.2.2",
@@ -41,6 +38,8 @@
     "@angular/forms": "^5.2.2",
     "@angular/platform-browser": "^5.2.2",
     "@angular/platform-browser-dynamic": "^5.2.2",
+    "@criollapp/common": "^1.0.13",
+    "@criollapp/theme": "^1.0.13",
     "@types/jasmine": "^2.8.6",
     "clean-css": "^4.1.9",
     "html-minifier": "^3.5.8",
@@ -57,7 +56,8 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.10.0",
-    "shelljs": "^0.8.1"
+    "shelljs": "^0.8.1",
+    "zone.js": "^0.8.20"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,9 @@
 import {CAClassAbstract} from '@criollapp/common';
-import { IXCssFramework, XCssFrameworkGeneric, XCssFrameworkAbstract, XCssFrameworkBootstrap, XCssFrameworkMaterial } from "@x/theme";
+import { ICACssFramework, CACssFrameworkGeneric, CACssFrameworkAbstract, CACssFrameworkBootstrap, CACssFrameworkMaterial } from "@criollapp/theme";
 import { Input } from "@angular/core";
 
 export abstract class CAComponentAbstract extends CAClassAbstract {
-  public cssFramework:IXCssFramework;
+  public cssFramework:ICACssFramework;
 
   constructor()
   {
@@ -21,44 +21,44 @@ export abstract class CAComponentAbstract extends CAClassAbstract {
   {
     switch(name)
     {
-      case XCssFrameworkAbstract.FRAMEWORK_BOOTSTRAP:
-        this.cssFramework = new XCssFrameworkBootstrap();
+      case CACssFrameworkAbstract.FRAMEWORK_BOOTSTRAP:
+        this.cssFramework = new CACssFrameworkBootstrap();
         break;
-      case XCssFrameworkAbstract.FRAMEWORK_MATERIAL:
-        this.cssFramework = new XCssFrameworkMaterial();
+      case CACssFrameworkAbstract.FRAMEWORK_MATERIAL:
+        this.cssFramework = new CACssFrameworkMaterial();
         break;
       default:
-        this.cssFramework = new XCssFrameworkGeneric();
+        this.cssFramework = new CACssFrameworkGeneric();
     }
   }
 
   public setGeneric()
   {
-    this.cssFramework = new XCssFrameworkGeneric();
+    this.cssFramework = new CACssFrameworkGeneric();
   }
 
   public isGeneric()
   {
-    return this.cssFramework instanceof XCssFrameworkGeneric;
+    return this.cssFramework instanceof CACssFrameworkGeneric;
   }
 
   public setBootstrap()
   {
-    this.cssFramework = new XCssFrameworkBootstrap();
+    this.cssFramework = new CACssFrameworkBootstrap();
   }
 
   public isBootstrap()
   {
-    return this.cssFramework instanceof XCssFrameworkBootstrap;
+    return this.cssFramework instanceof CACssFrameworkBootstrap;
   }
 
   public setMaterial()
   {
-    this.cssFramework = new XCssFrameworkMaterial();
+    this.cssFramework = new CACssFrameworkMaterial();
   }
 
   public isMaterial()
   {
-    return this.cssFramework instanceof XCssFrameworkMaterial;
+    return this.cssFramework instanceof CACssFrameworkMaterial;
   }
 }

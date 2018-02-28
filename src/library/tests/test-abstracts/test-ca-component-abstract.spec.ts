@@ -1,31 +1,31 @@
-import { TestXComponentAbstract } from "../utils/test-ca-component-abstract.util";
-import { XCssFrameworkGeneric, XCssFrameworkBootstrap, XCssFrameworkMaterial, XCssFrameworkAbstract } from "@x/theme";
+import { TestCAComponentAbstract } from "../utils/test-ca-component-abstract.util";
+import { CACssFrameworkGeneric, CACssFrameworkBootstrap, CACssFrameworkMaterial, CACssFrameworkAbstract } from "@criollapp/theme";
 import { ComponentFixture } from "@angular/core/testing";
-import { TestXComponentAbstractContainer } from "../utils/test-ca-component-abstract-container.util";
+import { TestCAComponentAbstractContainer } from "../utils/test-ca-component-abstract-container.util";
 import { TestBed } from "@angular/core/testing";
 import { async } from "@angular/core/testing";
 
 describe('CAComponentAbstract',()=>{
-  let object:TestXComponentAbstract = new TestXComponentAbstract();
+  let object:TestCAComponentAbstract = new TestCAComponentAbstract();
 
-  let componentContainer: TestXComponentAbstractContainer;
-  let fixtureContainer: ComponentFixture<TestXComponentAbstractContainer>;
+  let componentContainer: TestCAComponentAbstractContainer;
+  let fixtureContainer: ComponentFixture<TestCAComponentAbstractContainer>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [],
-      declarations: [TestXComponentAbstract, TestXComponentAbstractContainer]
+      declarations: [TestCAComponentAbstract, TestCAComponentAbstractContainer]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixtureContainer = TestBed.createComponent(TestXComponentAbstractContainer);
+    fixtureContainer = TestBed.createComponent(TestCAComponentAbstractContainer);
     componentContainer = fixtureContainer.componentInstance;
     fixtureContainer.detectChanges();
   });
 
-  it('cssFramework has an instance of XCssFrameworkGeneric by default',()=>{
-    expect( object.cssFramework instanceof XCssFrameworkGeneric ).toBeTruthy();
+  it('cssFramework has an instance of CACssFrameworkGeneric by default',()=>{
+    expect( object.cssFramework instanceof CACssFrameworkGeneric ).toBeTruthy();
   });
 
   it('isGeneric return  true when is generic',()=>{
@@ -33,7 +33,7 @@ describe('CAComponentAbstract',()=>{
   });
 
   it('isGeneric return false when is not generic',()=>{
-    object.cssFramework = new XCssFrameworkBootstrap();
+    object.cssFramework = new CACssFrameworkBootstrap();
     expect( object.isGeneric() ).toBeFalsy();
   });
 
@@ -42,7 +42,7 @@ describe('CAComponentAbstract',()=>{
   });
 
   it('isBootstrap return false when is not bootstrap',()=>{
-    object.cssFramework = new XCssFrameworkMaterial();
+    object.cssFramework = new CACssFrameworkMaterial();
     expect( object.isBootstrap() ).toBeFalsy();
   });
 
@@ -51,7 +51,7 @@ describe('CAComponentAbstract',()=>{
   });
 
   it('isMaterial return false when is not material',()=>{
-    object.cssFramework = new XCssFrameworkGeneric();
+    object.cssFramework = new CACssFrameworkGeneric();
     expect( object.isMaterial() ).toBeFalsy();
   });
 
@@ -73,28 +73,28 @@ describe('CAComponentAbstract',()=>{
     expect( object.isMaterial() ).toBeTruthy();
   });
 
-  it('frameworkName when is generic, cssFramework must be XCssFrameworkGeneric',()=>{
-    object.frameworkName = XCssFrameworkAbstract.FRAMEWORK_GENERIC;
+  it('frameworkName when is generic, cssFramework must be CACssFrameworkGeneric',()=>{
+    object.frameworkName = CACssFrameworkAbstract.FRAMEWORK_GENERIC;
 
     expect( object.isGeneric() ).toBeTruthy();
   });
 
-  it('frameworkName when is bootstrap, cssFramework must be XCssFrameworkBootstrap',()=>{
-    object.frameworkName = XCssFrameworkAbstract.FRAMEWORK_BOOTSTRAP;
+  it('frameworkName when is bootstrap, cssFramework must be CACssFrameworkBootstrap',()=>{
+    object.frameworkName = CACssFrameworkAbstract.FRAMEWORK_BOOTSTRAP;
 
     expect( object.isBootstrap() ).toBeTruthy();
   });
 
-  it('frameworkName when is material, cssFramework must be XCssFrameworkMaterial',()=>{
-    object.frameworkName = XCssFrameworkAbstract.FRAMEWORK_MATERIAL;
+  it('frameworkName when is material, cssFramework must be CACssFrameworkMaterial',()=>{
+    object.frameworkName = CACssFrameworkAbstract.FRAMEWORK_MATERIAL;
 
     expect( object.isMaterial() ).toBeTruthy();
   });
 
   it('get frameworkName must return the correct',()=>{
-    object.frameworkName = XCssFrameworkAbstract.FRAMEWORK_MATERIAL;
+    object.frameworkName = CACssFrameworkAbstract.FRAMEWORK_MATERIAL;
 
-    expect( object.frameworkName == XCssFrameworkAbstract.FRAMEWORK_MATERIAL ).toBeTruthy();
+    expect( object.frameworkName == CACssFrameworkAbstract.FRAMEWORK_MATERIAL ).toBeTruthy();
   });
 
   it('frameworkName has Input decorator', ()=>{

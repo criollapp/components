@@ -6,7 +6,7 @@ import { CAlertClass } from "../../class/ca-alert.class";
   template:`
     <ca-alert (close)="closed()" [alert]="alert"></ca-alert>
   `})
-export class TestXAlertContainerComponent
+export class TestCAlertContainerComponent
 {
   @ViewChild(CAlertComponent) public alertComponent: CAlertComponent;
   public alert:CAlertClass = new CAlertClass();

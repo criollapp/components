@@ -3,7 +3,7 @@ import { CAStepByStepAbstract } from "../../abstracts/ca-step-by-step.abstract";
 import { TestStep } from "./test-ca-step.util";
 
 @Component({template: ''})
-export class XTestStepByStepComponent extends CAStepByStepAbstract {
+export class CATestStepByStepComponent extends CAStepByStepAbstract {
 
   protected build():void
   {
