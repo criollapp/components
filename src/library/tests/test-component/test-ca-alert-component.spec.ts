@@ -1,7 +1,7 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import { DebugElement } from "@angular/core";
 import { CAlertComponent } from "../../components/alert/ca-alert.component";
-import { CAlertClass } from "../../class/ca-alert.class";
+import { CAlertClass } from "@criollapp/common";
 import { By } from "@angular/platform-browser";
 import { TestCAlertContainerComponent } from "../utils/test-ca-alert-component-container.util";
 

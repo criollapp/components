@@ -1,6 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
 import { CAlertComponent } from "../../components/alert/ca-alert.component";
-import { CAlertClass } from "../../class/ca-alert.class";
+import { CAlertClass } from "@criollapp/common";
 
 @Component({
   template:`

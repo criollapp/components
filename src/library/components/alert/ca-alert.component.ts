@@ -1,6 +1,6 @@
 import { CAComponentAbstract } from "../../abstracts/ca-component.abstract";
 import { Component, Input, EventEmitter, Output } from "@angular/core";
-import { CAlertClass } from "../../class/ca-alert.class";
+import { CAlertClass } from "@criollapp/common";
 
 @Component({
   selector: 'ca-alert',

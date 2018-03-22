@@ -25,7 +25,7 @@ import sass from 'node-sass';
  */
 const globals = {
   '@criollapp/common': 'ng.caCommon',
-  '@x/theme': 'ng.xTheme',
+  '@criollapp/theme': 'ng.caTheme',
   '@angular/core': 'ng.core',
   '@angular/common': 'ng.common',
 
@@ -309,7 +309,7 @@ export default {
   input: 'public_api.ts',
   output: {
     format: 'umd',
-    file: 'bundles/x-components.umd.js'
+    file: 'bundles/ca-components.umd.js'
   },
     external: Object.keys(globals),
     plugins: [resolve(), sourcemaps(),
