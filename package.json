@@ -25,7 +25,9 @@
     "angular",
     "components",
     "module",
-    "library"
+    "library",
+    "components",
+    "bootstrap"
   ],
   "author": "Miguel Rivera",
   "private": false,
