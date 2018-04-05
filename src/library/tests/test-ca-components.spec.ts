@@ -1,5 +1,5 @@
 import {
-  CAComponentsModule, CAComponentAbstract, CAlertComponent, CAStepAbstract, CAStepByStepComponent, ICAStep,
+  CAComponentsModule, CAComponentAbstract, CAStepAbstract, ICAStep,
     CAStepByStepAbstract
 } from '../ca-components';
 
